@@ -86,7 +86,7 @@ userSchema.methods.generateRefreshToken=function(){
   );
 };
 
-// function to generate refresh Token
+//   example function to  generate refresh Token
 // userSchema.methods.generateRefreshToken=function(){};
 
 export const User=mongoose.model('User',userSchema);
