@@ -5,13 +5,14 @@ const storage = multer.diskStorage({
       cb(null, './public/temp')
     },
     filename: function (req, file, cb) {
+      // console.log("originalfile" ,file.originalname)
     //   const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9)
       cb(null, file.originalname);
     }
   })
   
    export const upload = multer({ 
-    storage:   //instead of "storage:storage" we will use "storage" because we are using ES6 
+    storage  //instead of "storage:storage" we will use "storage" because we are using ES6 
      })
 
 
